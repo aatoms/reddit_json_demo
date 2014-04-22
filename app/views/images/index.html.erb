@@ -1,10 +1,14 @@
-<%= form_tag("/fetch", method: "get") do %>
-  <%= select_tag(:subreddit, options_for_select([['Motivate Me', 'getmotivated'], ['Make Me Laugh', 'funny'],['Show Me A Gif', 'gifs']], params[:subreddit])) %>
-  <%= submit_tag("Fetch!") %>
-<% end %>
-
-<section class="image_holder">
-  <% if @image != '' %>
-    <img src="<%= @image %>">
+<section class="form">
+  <%= form_tag("/fetch", method: "get") do %>
+    <%= select_tag(:subreddit, options_for_select([['Motivate Me', 'getmotivated'], ['Make Me Laugh', 'funny'], ['Show Me A Gif', 'gifs']], params[:subreddit])) %>
+    <%= submit_tag("Fetch!") %>
   <% end %>
+</section>
+
+<section class="container">
+  <section class="image_holder">
+    <% if @image != '' %>
+      <img src="<%= @image %>">
+    <% end %>
+  </section>
 </section>

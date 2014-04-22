@@ -11,3 +11,26 @@
  *= require_self
  *= require_tree .
  */
+body {
+    background: #000;
+    margin: 0;
+    padding: 0;
+}
+.form {
+    text-align: center;
+    background: #fff;
+    width: 100%;
+    border-bottom: 10px solid gold;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.container {
+    width: 960px;
+    min-height: 600px;
+    background: #000;
+    margin: 0 auto;
+    text-align: center;
+}
+img {
+    border: 10px solid gold;
+}
