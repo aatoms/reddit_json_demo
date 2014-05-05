@@ -1,6 +1,6 @@
 <section class="form">
   <%= form_tag("/fetch", method: "get") do %>
-    <%= select_tag(:subreddit, options_for_select([['Motivate Me', 'getmotivated'], ['Make Me Laugh', 'funny'], ['Show Me A Gif', 'gifs']], params[:subreddit])) %>
+    <%= select_tag(:subreddit, options_for_select([['Show me something cute', 'aww'], ['Show Me A Gif', 'gifs']], params[:subreddit])) %>
     <%= submit_tag("Fetch!") %>
   <% end %>
 </section>

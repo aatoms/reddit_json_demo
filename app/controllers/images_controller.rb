@@ -18,8 +18,6 @@ class ImagesController < ApplicationController
     else
       @image = ''
     end
-
-
   end
 
 end

@@ -37,6 +37,8 @@ group :development, :test do
   gem 'launchy', '~> 2.4.2'
 end
 
+# FARADAY
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
